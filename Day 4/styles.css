@@ -6,118 +6,299 @@
 
 body {
     background-color: #00c3ff;
+    height: 100vw;
 }
+
+
+/**********************************************************************************************/
 
 .clock {
-    height: 500px;
-    width: 500px;
+    height: 55vw;
+    width: 55vw;
     background-color: #00c3ff;
     border-radius: 100%;
-    border: 10px solid #ffffff;
+    border: 0.6vw solid #ffffff;
     margin: auto;
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
 }
 
-.center {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    background: rgb(255, 255, 255);
-    border-radius: 100%;
-}
 
-.twelve {
-    position: absolute;
-    width: 5px;
-    height: 20px;
-    background: #0075fb;
-    left: 0;
-    top: 0;
-    right: 0;
-    margin: 0 auto;
-}
+/**********************************************************************************************/
 
-.three {
+
+/* Clock Name Start */
+
+.clock-name {
     position: absolute;
-    width: 20px;
-    height: 5px;
-    background: #0075fb;
-    top: 0;
+    width: max-content;
+    height: max-content;
+    /* background: #0075fb; */
+    font-size: 3vw;
+    color: #ffffff;
+    text-align: center;
+    left: 19.5vw;
     bottom: 0;
     right: 0;
-    margin: auto 0;
+    top: 8vw;
 }
 
-.six {
-    position: absolute;
-    width: 5px;
-    height: 20px;
-    background: #0075fb;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-}
 
-.nine {
-    position: absolute;
-    width: 20px;
-    height: 5px;
-    background: #0075fb;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto 0;
-}
+/* Clock Name End */
+
+
+/**********************************************************************************************/
+
+
+/* Clock Hand Start  */
 
 #seconds {
     position: absolute;
-    height: 200px;
-    width: 2px;
+    height: 26vw;
+    width: 0.2vw;
     left: 0;
     right: 0;
-    bottom: 200px;
+    bottom: 26vw;
     top: 0px;
     margin: auto;
-    background: #feffff;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    z-index: 3;
     -webkit-transform-origin: bottom;
-    -webkit-transform: rotate(335deg);
+    /* -webkit-transform: rotate(210deg) */
+}
+
+#seconds-back {
+    position: absolute;
+    height: 6vw;
+    width: 0.2vw;
+    left: 0;
+    right: 0;
+    bottom: 0vw;
+    top: 6vw;
+    margin: auto;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    z-index: 3;
+    -webkit-transform-origin: top;
 }
 
 #minutes {
     position: absolute;
-    height: 160px;
-    width: 2px;
+    height: 23vw;
+    width: 0.16vw;
     left: 0;
     right: 0;
-    bottom: 160px;
+    bottom: 23.5vw;
     top: 0px;
     margin: auto;
-    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 0.19vw solid #ffffff;
+    /* background: #ffffff; */
     -webkit-transform-origin: bottom;
-    -webkit-transform: rotate(210deg);
 }
 
 #hours {
     position: absolute;
-    height: 140px;
-    width: 10px;
+    height: 18vw;
+    width: 0.2vw;
     left: 0;
     right: 0;
-    bottom: 140px;
+    bottom: 18.8vw;
     top: 0px;
     margin: auto;
     border-radius: 10px;
-    background: rgb(14, 44, 177);
+    border: 0.39vw solid #ffffff;
+    /* background: rgb(14, 44, 177); */
     -webkit-transform-origin: bottom;
-    -webkit-transform: rotate(80deg);
 }
+
+
+/* Clock Hand End  */
+
+
+/**********************************************************************************************/
+
+
+/* Clock Center Start */
+
+.center {
+    width: 1.7vw;
+    height: 1.7vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+.center-point {
+    width: 0.7vw;
+    height: 0.7vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: #00c3ff;
+    border-radius: 100%;
+    z-index: 5;
+}
+
+
+/* Clock Center End */
+
+
+/**********************************************************************************************/
+
+
+/* Clock Time Arrows Start */
+
+.twelve {
+    position: absolute;
+    width: 0.4vw;
+    height: 2vw;
+    background: #0075fb;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.one {
+    position: absolute;
+    width: 0.4vw;
+    height: 2vw;
+    background: #0075fb;
+    top: 3.6vw;
+    left: 26.45vw;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transform: rotate(30deg);
+}
+
+.two {
+    position: absolute;
+    width: 0.4vw;
+    height: 2vw;
+    background: #0075fb;
+    top: 13.25vw;
+    /* left: 26.45vw; */
+    right: 4.4vw;
+    margin: 0 auto;
+    -webkit-transform: rotate(60deg);
+}
+
+.three {
+    position: absolute;
+    width: 2vw;
+    height: 0.4vw;
+    background: #0075fb;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+
+.four {
+    position: absolute;
+    height: 0.4vw;
+    width: 2vw;
+    background: #0075fb;
+    right: 3.6vw;
+    top: 26.45vw;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transform: rotate(30deg);
+}
+
+.five {
+    position: absolute;
+    width: 2vw;
+    height: 0.4vw;
+    background: #0075fb;
+    bottom: 4.4vw;
+    right: 13.25vw;
+    margin: auto 0;
+    -webkit-transform: rotate(60deg);
+}
+
+.six {
+    position: absolute;
+    width: 0.4vw;
+    height: 2vw;
+    background: #0075fb;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.seven {
+    position: absolute;
+    height: 2vw;
+    width: 0.4vw;
+    background: #0075fb;
+    bottom: 3.6vw;
+    left: 0;
+    right: 26.45vw;
+    margin: 0 auto;
+    -webkit-transform: rotate(30deg);
+}
+
+.eight {
+    position: absolute;
+    height: 2vw;
+    width: 0.4vw;
+    background: #0075fb;
+    left: 4.4vw;
+    bottom: 13.25vw;
+    margin: 0 auto;
+    -webkit-transform: rotate(60deg);
+}
+
+.nine {
+    position: absolute;
+    width: 2vw;
+    height: 0.4vw;
+    background: #0075fb;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+
+.ten {
+    position: absolute;
+    height: 0.4vw;
+    width: 2vw;
+    background: #0075fb;
+    left: 3.6vw;
+    bottom: 26.45vw;
+    top: 0;
+    margin: auto 0;
+    -webkit-transform: rotate(30deg);
+}
+
+.eleven {
+    position: absolute;
+    width: 2vw;
+    height: 0.4vw;
+    background: #0075fb;
+    top: 4.4vw;
+    left: 13.25vw;
+    margin: auto 0;
+    -webkit-transform: rotate(60deg);
+}
+
+
+/* Clock Time Arrows End */
+
+
+/**********************************************************************************************/
