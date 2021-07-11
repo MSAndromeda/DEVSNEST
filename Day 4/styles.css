@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: #00c3ff;
+}
+
+.clock {
+    height: 500px;
+    width: 500px;
+    background-color: #00c3ff;
+    border-radius: 100%;
+    border: 10px solid #ffffff;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.center {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.twelve {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #0075fb;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.three {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background: #0075fb;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+
+.six {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #0075fb;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.nine {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background: #0075fb;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+
+#seconds {
+    position: absolute;
+    height: 200px;
+    width: 2px;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    top: 0px;
+    margin: auto;
+    background: #feffff;
+    -webkit-transform-origin: bottom;
+    -webkit-transform: rotate(335deg);
+}
+
+#minutes {
+    position: absolute;
+    height: 160px;
+    width: 2px;
+    left: 0;
+    right: 0;
+    bottom: 160px;
+    top: 0px;
+    margin: auto;
+    background: rgb(0, 0, 0);
+    -webkit-transform-origin: bottom;
+    -webkit-transform: rotate(210deg);
+}
+
+#hours {
+    position: absolute;
+    height: 140px;
+    width: 10px;
+    left: 0;
+    right: 0;
+    bottom: 140px;
+    top: 0px;
+    margin: auto;
+    border-radius: 10px;
+    background: rgb(14, 44, 177);
+    -webkit-transform-origin: bottom;
+    -webkit-transform: rotate(80deg);
+}
